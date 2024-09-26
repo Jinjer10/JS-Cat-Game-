@@ -1,0 +1,94 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+     <link rel="shortcut icon" href="ASIST/img/player/Whisker Wizard.ico" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/homePage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Are+You+Serious&family=Snowburst+One&family=Trade+Winds&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whisker Wizard</title>   
+   
+</head>
+<body>
+    <div class="head">
+    <h1>Whisker Wizard</h1>
+    <p>Guardian of the Enchanted Thicket</p>
+</div>
+    <div>
+        <a id="openInstructions" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Instructions
+        </a>
+        <a href="HTML/logIn.html">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Start
+        </a>
+        <a id="openRecords" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Records
+        </a>
+    </div>  
+
+    <div id="Instructions" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Instructions</h2>
+            
+            <p class="w">Welcome to the exciting world of Whisker Wizard, guardian of the enchanted thicket! Your mission is to defeat the monsters, and protect the thicket. Here's how to navigate this action-packed adventure:
+                Controls:
+                Use the left and right arrow keys to maneuver your character across the screen.
+                Press the up arrow key to jump forward.
+                To defeat the monsters that stand in your way use the Enter key to perform a quick roll.
+                share:
+                Every monster you kill earns you a precious point.
+                You must earn at least 50 cleans in the time limit to win a stage
+                Note that at each stage the conditions are slightly different
+                In stage 1 you have 60 seconds and 5 hearts to complete the mission
+                In stage 2 you have 30 seconds and 4 hearts and in stage 3 only 20 seconds and 3 hearts
+                Strive for the highest possible score in each stage to establish dominance.
+                Maintenance:
+                Be ware of monster attacks! Crashing into them in a situation other than diving or rolling will damage your health.
+                Lose all your hearts and it's over.
+                Have you finished a phase or are you eager for a new start? Just press the "R" key to reset.
+                and start the step again or "E" to return to the home screen.
+                When you're ready to dive back in, grab control and set off on your journey to victory!
+                Gear up, activate your skills and get ready to conquer another stage. The fate of the thicket is in your hands. Good luck!</p>
+        </div>
+    </div>
+
+    <div id="Records" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="levelsHeadline">
+                <h2>Level 1</h2>
+                <h2>Level 2</h2>
+                <h2>Level 3</h2>
+            </div>
+            <div id="highScoresList">
+                <div class="level-scores">
+                    <ul id="level1Scores" class="high-scores-list"></ul>
+                </div>
+                <div class="level-scores">
+                    <ul id="level2Scores" class="high-scores-list"></ul>
+                </div>
+                <div class="level-scores">
+                    <ul id="level3Scores" class="high-scores-list"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="JS/homePage.js"></script>
+
+</body>
+</html>
+

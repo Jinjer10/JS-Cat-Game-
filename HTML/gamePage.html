@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="../ASIST/img/player/Whisker Wizard.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Are+You+Serious&family=Snowburst+One&family=Trade+Winds&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whisker Wizard</title>
+</head>
+<body>
+    <canvas id="canvas1"></canvas>
+    
+    <img id="player" src="../ASIST/img/player/cat_S.png" >
+    <img id="layer5" src="../ASIST/img/backround/Backround5.png" >
+    <img id="layer4" src="../ASIST/img/backround/Backround4.png" >
+    <img id="layer3" src="../ASIST/img/backround/Backround3.png" >
+    <img id="layer2" src="../ASIST/img/backround/Backround2.png" >
+    <img id="layer1" src="../ASIST/img/backround/Backround1.png" >
+    <img id="layer0" src="../ASIST/img/backround/Backround0.png" >
+    <img id="enemy_bat" src="../ASIST/img/enemys/bat_S.png" >
+    <img id="enemy_gost" src="../ASIST/img/enemys/gost_S.png" >
+    <img id="enemy_spider" src="../ASIST/img/enemys/spider_S.png" >
+    <img id="fire" src="../ASIST/img/player/fire_S.png" >
+    <img id="collision" src="../ASIST/img/player/boom_S.png" >
+    <img id="lives" src="../ASIST/img/player/lives.png" >
+    <div class="arrow">
+        <img id="arrow" src="../ASIST/img/player/right-arrow.png" >
+
+        <button id="toggleMusicButton"><img id="musicImage" src="../ASIST/img/player/volume.png" alt="הפעל מוזיקה"></button>
+     <img id="play" src="../ASIST/img/player/volume.png" >
+      <img id="mute" src="../ASIST/img/player/volume (1).png" >
+    </div>
+    <audio >
+        <source id="boomSound" src="../ASIST/sounds/explosion3.wav" type="audio/mpeg">
+        <source id="hitSound" src="../ASIST/sounds/mixkit-cartoon-dazzle-hit-and-birds-746.wav" type="audio/mpeg">        
+        <source id="loosingSound" src="../ASIST/sounds/mixkit-angry-cartoon-kitty-meow-94.wav" type="audio/mpeg">
+        <source id="winningSound" src="../ASIST/sounds/mixkit-fairy-cartoon-success-voice-344.wav" type="audio/mpeg">
+        <source id="backroundMusic" src="../ASIST/sounds/cruising-down-8bit-lane-159615.mp3" type="audio/mpeg">
+
+      </audio>
+      <a id="levelsPage" href="levelsPage.html"></a>
+      <a id="homePage" href="../WhiskerWizard.html"></a>
+
+      <div id="selectedLevel"></div>
+      <div id="username"></div>
+     
+
+      
+      <div id="popup" class="popup">
+        <div class="popup-content">
+            <p>Leaving so soon?</p>
+            <div class="bts">
+            <div class="button">
+            <button id="continue-btn">Let's keep playing</button>
+        </div>
+        <div class="button">
+            <button  id="cancel-btn">Leave the game</button>
+        </div>
+       </div>
+     </div>
+    </div>
+    
+
+   <script type="module" src="../JS/gamePages/main.js"></script>
+</body>
+</html>

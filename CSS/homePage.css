@@ -1,0 +1,317 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.head{
+    display: grid;
+    text-shadow: 0 0 5px #c6fcffa7, 0 0 25px #c6fcffa7, 0 0 50px #c6fcffa7, 0 0 200px #c6fcffa7;
+}
+
+h1 {
+    font-family: "Trade Winds", system-ui;
+    text-align: center;
+    font-size: 8vw; /* You can adjust the size using vw */
+    padding: 2vw 4vw 1.25vw;
+    color: rgba(255, 255, 255, 0.806);
+}
+
+p {
+    font-family: "Trade Winds", system-ui;
+    text-align: center;
+    font-size: 4vw; /* You can adjust the size using vw */
+    padding: 0 4vw 1.25vw;
+    color: rgba(255, 255, 255, 0.806);  
+}
+
+body {
+   
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #333 url(../ASIST/img/backround/backiee-121273-landscape.jpg) no-repeat center bottom;
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a { 
+    box-shadow: 0 0 5px #c6fcffa7, 0 0 25px #c6fcffa7, 0 0 50px #c6fcffa7, 0 0 200px #c6fcffa7;
+    font-family: "Trade Winds", system-ui;
+    position: relative;
+    display: inline-block;
+    padding: 2vw 3vw;
+    background-color: rgba(255, 255, 255, 0.155);
+    margin: 3vw 0;
+    color: #03e9f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 0.1em;
+    overflow: hidden;
+    margin-right: 5vw;
+}
+
+@media screen and (max-width: 768px) {
+    a {
+        margin-right: 0;
+    }
+}
+
+a:hover {
+    
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+a:nth-child(1) {
+    filter: hue-rotate(270deg);
+}
+
+a:nth-child(2) {
+    filter: hue-rotate(110deg);
+}
+
+a span {
+    position: absolute;
+    display: block;
+}
+
+a span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+    50%, 100% {
+        left: 100%;
+    }
+}
+
+a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+    50%, 100% {
+        top: 100%;
+    }
+}
+
+a span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+
+@keyframes animate3 {
+    0% {
+        right: -100%;
+    }
+    50%, 100% {
+        right: 100%;
+    }
+}
+
+a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes animate4 {
+    0% {
+        bottom: -100%;
+    }
+    50%, 100% {
+        bottom: 100%;
+    }
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    text-shadow: 0 0 5px #c6fcffa7, 0 0 25px #c6fcffa7, 0 0 50px #c6fcffa7, 0 0 200px #c6fcffa7;
+    font-family: "Snowburst One", system-ui;
+    background-color: #00000075;
+    padding: 20px; /* Adding padding around the content */
+    border: 1px solid #888;
+    max-width: 80%; /* Limiting width to allow content to fit better on smaller screens */
+}
+
+h2 {
+    color: aliceblue;
+    text-shadow: 0 0 5px #c6fcffa7, 0 0 25px #c6fcffa7, 0 0 50px #c6fcffa7, 0 0 200px #c6fcffa7;
+    font-size: 2.3vw;
+    padding: 5px;
+    margin-left: 3%;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #aaa;
+    font-size: 3vw; /* Using larger font size for the close icon */
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .modal-content {
+        padding: 10px; /* Smaller padding for smaller screens */
+        max-width: 90%; /* Further limit width for smaller screens */
+    }
+
+    h2 {
+        font-size: 4vw; /* Larger font size for smaller screens */
+    }
+
+    .close {
+        font-size: 6vw; /* Larger font size for smaller screens */
+    }
+}
+
+.modal-content .high-scores-list li:before {
+    display: none; /* Hiding the markers (bullets) */
+}
+
+.modal {
+    text-align: center;
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+h2{
+ font-size: 2.3vw; 
+  padding: 5px;
+  margin-right: 5%;
+  margin-left: 5%;;
+}
+
+ul{
+  margin-right: 10%;
+  margin-left: 10%;
+
+}
+
+.levelsHeadline{
+  font-family: "Snowburst One", system-ui;
+  text-align: center;
+  display: flex;
+  
+
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-content .level-scores {
+    margin-bottom: 4%; /* Spacing between high score lists */
+  }
+  
+  .modal-content .high-scores-list {
+    /* Styling for the high score list */
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .modal-content .high-scores-list li {
+    /* Styling for each item in the list */
+    margin-bottom: 5px;
+  }
+  
+  .modal-content .high-scores-list li:before {
+    /* Adding text marker for each item */
+    content: "\2022"; /* Bullet symbol */
+    display: none;
+    width: 1em;
+    /* margin-left: -1em; */
+  }
+  
+  li {
+    font-size: 1.3vw;
+  }
+  
+  .level-dropdown {
+    margin-bottom: 20px;
+  }
+  
+  .level-dropdown select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Snowburst One", system-ui;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Fixed width */
+    max-width: 500vw; /* Maximum width */
+    height: 50%; /* Fixed height */
+    max-height: 500vw; /* Maximum height */
+    position: fixed; /* Allowing for centered display */
+    top: 50%; /* Centering vertically */
+    left: 50%; /* Centering horizontally */
+    transform: translate(-50%, -50%); /* Centering the modal */
+  }
+  
+  .w {
+    font-family: "Snowburst One", system-ui;
+    font-size: 1.1vw;
+  }
+  

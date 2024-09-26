@@ -1,0 +1,118 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(36, 36, 36);
+}
+
+#canvas1{
+    box-shadow: 1px 3px 8px 4px rgba(0, 0, 0, 0.575);
+    border: 5px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 100%;
+    max-height: 100%;
+        font-family: "Are You Serious";
+        font-weight: 400;
+        font-style: normal;
+      
+      }
+.arrow{
+ text-align: right;
+ display: flex;
+}
+#arrow{
+    position: absolute;
+    display: flex;
+    width: 7%;
+    margin-top: 2;
+    margin-right: 2% ;
+    margin-left: 90%;
+}
+#musicImage{
+    position: absolute;
+    display: flex;
+    width: 6%;
+     margin-top: 1%;
+    margin-left: 82%;
+}
+
+#toggleMusicButton{
+    background-color: #00000000;
+}
+
+#player, #layer0, #layer1, #layer2, #layer3, #layer4, #layer5, #enemy_bat, #enemy_gost, #enemy_spider, #fire, #collision, #lives, #play, #mute{
+    display: none;
+}
+
+.popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Snowburst One", system-ui;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Fixed width */
+    max-width: 500vw; /* Maximum width */
+    height: 50%; /* Fixed height */
+    max-height: 500vw; /* Maximum height */
+    position: fixed; /* To allow centering */
+    top: 50%; /* Vertical centering */
+    left: 50%; /* Horizontal centering */
+    transform: translate(-50%, -50%); /* Centering */
+    display: flex; /* Display as flex container */
+    flex-direction: column; /* Vertical stacking of items */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    color: aliceblue; /* Text color */
+    text-shadow: 0 0 5px #c6fcffa7, 0 0 25px #c6fcffa7, 0 0 50px #c6fcffa7, 0 0 200px #c6fcffa7; /* Text shadow */
+    background-color: #00000075; /* Background color with transparency */
+    padding: 20px; /* Padding around content */
+    border: 1px solid #888; /* Border */
+    max-width: 80%; /* Adjusting width for smaller screens */
+    display: none; /* Initially hidden */
+}
+
+.popup-content {
+    
+    text-align: center;
+align-items: center;
+    font-family: "Snowburst One", system-ui;
+   font-size: 2.5vw; 
+}
+.bts{
+    text-shadow: 0 0 5px #c6fcffa7, 0 0 25px #c6fcffa7, 0 0 50px #c6fcffa7, 0 0 200px #c6fcffa7;
+
+    text-align: center;
+    margin-left: 17%;
+    display: flex;
+}
+
+
+.popup button {
+    position: relative;
+    display: inline-block;
+    padding: 2vw 3vw;
+    margin: 3vw 0;
+    font-size: 1.5vw;
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px #c6fcffa7, 0 0 25px #c6fcffa7, 0 0 50px #c6fcffa7, 0 0 200px #c6fcffa7;
+    font-family: "Snowburst One", system-ui;
+    background-color: #00000076;
+    transition: 0.5s;
+    letter-spacing: 0.1em;
+    overflow: hidden;
+    margin-right: 5vw;
+    border: none;
+    
+}
+.button :hover {
+    box-shadow: 0 0 5px #ffffffa7, 0 0 25px #ffffffa7, 0 0 50px #ffffffa7, 0 0 200px #ffffffa7;
+}
